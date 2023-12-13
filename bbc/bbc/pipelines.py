@@ -28,3 +28,11 @@ class BbcPipeline:
         if isinstance(item, BbcItem):
                 self.collection.insert_one(dict(item))
         return item
+    def open_spider(self, spider):
+        self.client = pymongo.MongoClient(
+                settings.MONGO_HOST,
+                settings.MONGO_PORT
+                )
+
+    def close_spider(self, spider):
+        self.client.close()

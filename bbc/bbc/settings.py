@@ -93,7 +93,7 @@ TWISTED_REACTOR = "twisted.internet.asyncioreactor.AsyncioSelectorReactor"
 FEED_EXPORT_ENCODING = "utf-8"
 
 # MONGO DB SETTINGS
-MONGO_HOST="localhost"
+MONGO_HOST="mongo"
 MONGO_PORT=27017
 MONGO_DB_NAME="bbc_one"
 MONGO_COLLECTION_NAME="bbc_feedss"
